@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta content="charset=utf-8">
+		<title>MySQL</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="login">
+				<form method="post">
+					Email:
+					<input type="text" id="emailLogin"/>
+					Senha:
+					<input type="password" id="senhaLogin"/>	
+					<input type="button" value="logar" onclick="testaLogin()"/>
+				</form>
+			</div>
+			<nav>
+				<div id="pos">
+					<a href="index.html">
+						<div class="menu">
+							<img src="img/home.png"/>home
+						</div>
+					</a>
+					<a href="cursos.html">
+						<div class="menu">
+							<img src="img/cursos.png"/>cursos
+						</div>
+					</a>
+					<a href="cadastro.html">
+						<div class="menu">
+							<img src="img/cadastro.png"/>cadastro
+						</div>
+					</a>
+					<a href="contatos.html">
+						<div class="menu">
+							<img src="img/contatos.png"/>contatos
+						</div>
+					</a>
+					<a href="downloads.html">
+						<div class="menu">
+							<img src="img/downloads.png"/>downloads
+						</div>
+					</a>
+					<a href="sobre.html">
+						<div class="menu">
+							<img src="img/sobre.png"/>sobre
+						</div>
+					</a>
+				</div>
+			</nav>
+			<br/>
+			<header>
+				<div id="logo">
+					<img src="img/logo.png"/>
+					<h2>Curso Definição</h2>
+				</div>
+			</header>
+			<br/>
+			<section class="s-cursos">
+				<div id="titulo">
+					<h2>MySQL</h2>
+				</div>
+				<br/>
+				
+				<br/>
+				<img src="img/mysql.jpg" class="imagem"/>
+				<br/>
+				<br/>
+				<h2 class="tt">MySQL</h2>
+				<br/>
+				<p>O curso de MySQL para desenvolvedores foi feito para pessoas que não tem nenhum conhecimento em banco de dados e querer aprender a trabalhar com esta tecnologia direcionada ao desenvolvimento de aplicações para a internet.</p>
+				<br/>
+				<p><b>Linguagem abordada:</b> SQL</p>
+				<br/>
+				<h3>Ementa</h3>
+				<br/>
+				<h4>MySQL</h4>
+				<br/>
+				<ul>
+					<li>Modelagem e normalização de bancos de dados</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li>Criação de banco de dados</li>
+							<li>Variáveis e funções da base de dados</li>
+							<li>Entidades e Atributos</li>
+							<li>1º Forma Normal</li>
+							<li>2º Forma Normal</li>
+							<li>3º Forma Normal</li>
+							<li>4º Forma Normal</li>
+							<li>Cardinalidades</li>
+							<li>DER</li>
+							<li>Constraints</li>
+							<li>Tipos de Tabelas do MySQL</li>
+							<li style="list-style-type:none">
+								<ul>
+									<li>MyISAM</li>
+									<li>InnoDB</li>
+									<li>MERGE</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<br/>
+					<li>Operações básicas</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li>Tipos de dados</li>
+							<li>Enums</li>
+							<li>Blob e gravação de arquivos</li>
+							<li>Data e Hora</li>
+							<li>Create</li>
+							<li>Delete</li>
+							<li>Update</li>
+							<li>Insert</li>
+							<li>Select / Where</li>
+							<li>Order By</li>
+							<li>Group By</li>
+							<li>Distinct</li>
+							<li>Between</li>
+							<li>Case when</li>
+							<li>Queries Hierárquicas</li>
+							<li>Union</li>
+							<li>Joins (Left, right, inner, natural)</li>
+							<li>Minus</li>
+							<li>Having</li>
+							<li>c</li>
+							<li>Limit</li>
+							<li>Is Null</li>
+							<li>SubQueries</li>
+							<li>Funções</li>
+							<li style="list-style-type:none">
+								<ul>
+									<li>Sum</li>
+									<li>Avg</li>
+									<li>Count</li>
+									<li>Max</li>
+									<li>Min</li>
+									<li>Round</li>
+									<li>Concat</li>
+									<li>Substr</li>
+									<li>Date format</li>
+									<li>Interval</li>
+									<li>Manipulação de data e hora</li>
+								</ul>
+							</li>
+							<li>Rollup</li>
+							<li>Metadados</li>
+							<li>Group By Union</li>
+						</ul>
+					</li>
+					<br/>
+					<li>Views</li>
+					<li>Criptografia de dados</li>
+					<li>Triggers</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li>Eventos Before e After</li>
+							<li>Operadores old e new</li>
+							<li>Backup de dados</li>
+						</ul>
+					</li>
+					<br/>
+					<li>Stored Procedures e funções</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li>Entrada e Saída de dados</li>
+							<li>Cursores</li>
+							<li style="list-style-type:none">
+								<ul>
+									<li>Implícito</li>
+									<li>Explicito</li>
+								</ul>
+							</li>
+							<li>Estrutura condicional If/else</li>
+							<li>Loops (for e while)</li>
+						</ul>
+					</li>
+					<br/>
+					<li>Transações</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li>Commit</li>
+							<li>Rollback</li>
+						</ul>
+					</li>
+					<li>Criação de Usuários e definição de privilégios</li>
+				</ul>
+				<br/>
+				<p><b>Preço:</b>indefinido &nbsp &nbsp &nbsp <b>Duração:</b> indefinido &nbsp &nbsp &nbsp <b>Pre-requisito:</b> nenhum</p>
+				<br/>
+				<a href="cadastro.html" class="link">
+					<div class="botao">
+						inscreva-se
+					</div>
+				</a>
+				<br/>
+			</section>
+			<br/>
+			<footer>
+				Copyright &copy 2016 Allan de souza melo
+			</footer>
+		</div>
+	</body>
+</html>

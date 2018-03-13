@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta content="charset=utf-8">
+		<title>Contatos</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="login">
+				<form method="post">
+					Email:
+					<input type="text" id="emailLogin"/>
+					Senha:
+					<input type="password" id="senhaLogin"/>	
+					<input type="button" value="logar" onclick="testaLogin()"/>
+				</form>
+			</div>
+			<nav>
+				<div id="pos">
+					<a href="index.html">
+						<div class="menu">
+							<img src="img/home.png"/>home
+						</div>
+					</a>
+					<a href="cursos.html">
+						<div class="menu">
+							<img src="img/cursos.png"/>cursos
+						</div>
+					</a>
+					<a href="cadastro.html">
+						<div class="menu">
+							<img src="img/cadastro.png"/>cadastro
+						</div>
+					</a>
+					<a href="contatos.html">
+						<div class="menu">
+							<img src="img/contatos.png"/>contatos
+						</div>
+					</a>
+					<a href="downloads.html">
+						<div class="menu">
+							<img src="img/downloads.png"/>downloads
+						</div>
+					</a>
+					<a href="sobre.html">
+						<div class="menu">
+							<img src="img/sobre.png"/>sobre
+						</div>
+					</a>
+				</div>
+			</nav>
+			<br/>
+			<header>
+				<div id="logo">
+					<img src="img/logo.png"/>
+					<h2>Curso Definição</h2>
+				</div>
+			</header>
+			<br/>
+			<section id="s-contatos">
+				<div id="titulo">
+					<h2>Contatos</h2>
+				</div>
+				<br/>
+				<div id="fale-conosco">
+					<form method="post" id="fale">
+						<h2>Fale conosco</h2>
+						<br/>
+						<table>
+							<tr>
+								<td>
+									Nome:
+								</td>
+								<td>
+									<input type="text" id="nome" placeholder="digite seu nome"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									E-mail:
+								</td>
+								<td>
+									<input type="text" id="email" placeholder="digite seu E-mail"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Assunto:
+								</td>
+								<td>
+									<input type="text" id="assunto" placeholder="titulo da mensagem"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Mensagem:
+								</td>
+								<td>
+									<textarea id="msg" cols="20" rows="5" placeholder="deixe aqui sua mensagem"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td>
+									<input type="button" value="enviar" id="bt" onclick="faleConosco()"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+					<br/>
+					<br/>
+					<table id="contato">
+						<tr>
+							<td>
+								Desenvolvedor :
+							</td> 
+							<td>
+								Allan de souza melo
+							</td>
+						</tr>
+						<tr>
+							<td>
+								E-mail:
+							</td> 
+							<td>
+								Allan_de_souza_melo@hotmail.com
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Telefone:
+							</td>
+							<td>
+								(21)99396-1217
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="debug">
+				</div>
+				<br/>
+			</section>
+			<br/>
+			<footer>
+				Copyright &copy 2016 Allan de souza melo
+			</footer>
+		</div>
+	</body>
+</html>

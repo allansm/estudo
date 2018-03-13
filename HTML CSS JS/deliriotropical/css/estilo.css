@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    /*color:#222;*/
+}
+.fpreto{background-color:#333}
+.fcinza{background-color:#444}
+.fbranco{background-color:#eee}
+.branco{color:#eee}
+.esquerda{float:left}
+.direita{float:right}
+.txtdireita{text-align:right}
+.txtcentro{text-align:center}
+.clearfix{overflow: auto; clear:both;}
+a{color:#ddd;text-decoration:none}
+.container{width:100%;min-width:300px;max-width:1200px;margin:auto;padding:10px;}
+.painel-facebook{
+    position:fixed;
+    top:25%;
+    left:-500px;
+    width:551px;
+    transition-duration:2s;
+    transition-timing-function:ease;
+    z-index:20;
+}
+.painel-facebook:hover{
+    /*left:0px;*/
+    transform: translate(500px,0px);
+    transition-duration:2s;
+    transition-timing-function: ease;
+}
+.painel-facebook img{
+    width:50px;
+    float:right;
+}
+/*.painel-facebook img:hover,
+.painel-facebook{
+    transform: translate(200px,0px);
+    
+}*/
+
+body{
+   font-size:1.125em; 
+}
+/*.logo{
+    position:relative;
+    top:60px;
+}*/
+header{
+    height:100%;
+    min-height:350px;
+    
+    background-image: url(../img/fundo.jpg);
+    background-size:cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    /*padding-top:20px;*/
+}
+/*.social img{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.social img:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}*/
+.menu{
+    width:100%;
+    max-width:49.5%;
+}
+nav ul{
+    padding:0px 10px;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    line-height: 40px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding:10px;
+}
+nav ul li a:hover{
+    color:#000;
+    background-color:#fff;
+}
+.iconface,.icontwitter,.iconinstagran {
+    width:40px;
+    height:40px;
+    background-size:cover;
+    display:inline-block;
+    margin:2px;
+}
+.iconface{background-image: url(../img/quadrados/facebookpb.png)}
+.icontwitter{background-image: url(../img/quadrados/twitterpb.png)}
+.iconinstagran{background-image: url(../img/quadrados/instagrampb.png)}
+.iconface:hover{background-image: url(../img/quadrados/facebook.png)}
+.icontwitter:hover{background-image: url(../img/quadrados/twitter.png)}
+.iconinstagran:hover{background-image: url(../img/quadrados/instagram.png)}
+
+.logo{
+    padding:50px 0px;
+}
+
+.localizacao,.contato,.socialbase{
+    height:100px;
+    width:100%;
+    min-width:310px;
+    max-width:33.333333%;
+    padding-top:50px;
+}
+
+.evento{width:49%;}
+.foto{width:210px;float:left}
+.texto{width:300px;padding-left:10px;}
+.promocao{
+   /* width:31.43%;
+    border:1px solid #222;
+    border-radius:4px;
+    margin:5px;
+    height:250px;*/
+    padding:10px;
+    width:100%;
+    min-width:350px;
+    max-width:31%;
+    
+    
+}
+.box{
+   /*height:430px;*/
+    display:inline-block;
+}
+.esp{
+    width:70%;
+}
+.im{
+    display:inline-block;
+}
+.coments{
+    display:inline-block;
+    width:60%;
+    border-left:1px solid #777;
+    padding-left:12px;
+}
+.redondo{
+    margin:20px;
+    display:inline-block;
+}
+.redondo img{
+    width:100px;
+    border-radius:100%;
+    height:100px;
+    margin-right:20px;
+}
+.caixa {
+
+    height:400px;
+    width:200px;
+    background-size: cover;
+    background-image:url(http://lorempixel.com/200/350/nightlife/1);
+}
+
+@media screen and (max-width: 700px) {
+    .evento,.texto,.foto{
+        width:97%;
+        text-align:center;
+    }
+    .promocao{
+        min-width:90%;
+    }
+    .esp{
+        width:96%;
+    }
+    .caixa{
+        margin:0px;
+        width:96%;
+        height:150px;
+        background-image:url(http://lorempixel.com/500/150/nightlife/)
+       
+    }
+    .localizacao,.contato,.socialbase{
+        max-width:100%;
+    }
+    
+    /*.painel-facebook{
+        width:300px;
+        left:-300px;
+    }
+    .painel-facebook:hover{
+        transform: translate(300px,0px);
+    }*/
+    
+}

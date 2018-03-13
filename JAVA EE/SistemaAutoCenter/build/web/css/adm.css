@@ -1,0 +1,31 @@
+
+.black{
+        background:#333;
+}
+.navbar ul li a,a{
+        color:#eee;
+}
+a:hover{
+        color:#eee;
+}
+.navbar ul li a:hover{
+        background:#222;
+}
+.navbar{
+        border:none;
+        border-radius:0px;
+}
+.dropdown a{
+        background:#333 !important;
+        color:#eee !important;
+}
+.dropdown .dropdown-menu{
+        background:#333 !important;
+}
+body{
+        background:#444;
+
+}
+.navbar-toggle span{
+  background: #eee;  
+}

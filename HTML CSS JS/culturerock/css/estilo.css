@@ -1,0 +1,191 @@
+a{
+    color:#eee;
+}
+.form-control{
+	max-width:100%;
+}
+.navbar ul li a{
+    margin:5px;
+    border-radius:2px;
+    border:1px outset transparent;
+}
+.navbar ul li a:hover{
+    background-color:#000;
+    border:1px outset #333;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.navbar{
+    width:100%;
+    border-radius:0px;
+    z-index:20;
+    border:1px outset #333;
+}
+.well{
+    border:none;
+    background:transparent;
+
+    border-radius:0px;
+}
+.icon-bar{
+    background:#eee;
+    border:1px inset #eee
+}
+.navbar-toggle{
+    border:1px outset #333;
+}
+.navbar-toggle:hover{
+    background:#000;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.navbar-brand{
+    background-image:url('../img/logoMenor.png');
+    width:130px;
+    margin:5px;
+}
+.btn{
+    border:1px outset #333;
+    border-radius:0px;
+	margin:0px;
+}
+.btn:hover{
+    background:#000;
+    color:#eee;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.form-control{
+    border:1px inset #eee;
+}
+
+.login{
+    padding:20px;
+    border:1px outset #333;
+}
+.login input{
+	width:180px;
+	margin:auto
+}
+.usuario{
+    margin-top:10px;
+}
+.event img{
+    border:3px outset #fff;
+	max-width:100%;
+}
+.carousel{
+    border:3px outset #fff;
+    width:100%;
+}
+.carousel img{
+	width:100%;
+}
+.modal{
+	text-align:center
+}
+.carousel-indicators li{
+    border-radius:0px;
+    border:1px inset #fff;
+    margin-left:2px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.carousel-indicators .active{
+    background:#000;
+}
+.blackbg{background:#222}
+.whitebg{background:#fff}
+.graybg{background:#666}
+.transparentbg{background:transparent}
+.whitefont{color:#eee}
+.blackfont{color:#222}
+.opacity{opacity:0.9}
+.navbar a{color:#eee}
+.afastacima{margin-top:100px}
+.afastacimamenos{margin-top:50px;}
+.afastacimamais{margin-top:120px}
+.marginauto{margin:auto}
+.esquerda{float:left}
+.direita{float:right}
+.clearfix{clear:both;overflow:auto}
+.circular{border-radius:100%}
+.shadow{-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);}
+.afastaesquerda{margin-left:20px}
+.aligncenter{text-align:center}
+.borderround{border-radius:15px}
+.whiteboard{border:1px outset #fff;border-radius:5px;}
+body{
+	height:auto;
+    background:#ddd;
+    background-image:url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.events{
+    width:100%;
+	max-width:100%;
+}
+.pag{
+    max-width:93%;
+    border:1px outset #fff;
+}
+.face{
+    background-image: url(../img/facebookpb.png);
+    width:50px;
+    height:50px;
+    background-size:cover;
+    margin:5px;
+	border:1px outset #333;
+}
+.insta{
+    background-image: url(../img/instagrampb.png);
+    width:50px;
+    height:50px;
+    background-size:cover;
+    margin:5px;
+	border:1px outset #333;
+}
+.twit{
+    background-image: url(../img/twitterpb.png);
+    width:50px;
+    height:50px;
+    background-size:cover;
+    margin:5px;
+	border:1px outset #333;
+}
+.face:hover{
+    background-image: url(../img/facebook.png);
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.insta:hover{
+    background-image: url(../img/instagram.png);
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.twit:hover{
+    background-image: url(../img/twitter.png);
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.redesoc{
+    max-width:190px;
+    margin:auto;
+}
+.fale input,.fale textarea{
+	width:100%;
+}
+.cadastro,.fale{
+	border:1px outset #eee;
+	padding:10px;
+	margin:20px;
+}
+.videos{
+	display:inline-block;
+	width:100%;
+}

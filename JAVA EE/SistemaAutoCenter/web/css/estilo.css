@@ -1,0 +1,153 @@
+.fazul{background-color:rgba(32, 132, 165, 0.83);}
+.cinza{color: #555}
+.bcinza{background-color: rgba(72, 72, 72, 0.95)}
+.bcustom{background:#111;opacity:0.9}
+.branco{color: #fff}
+.fbranco{background-color: #fff}
+.fpreto{color: black}
+.vermelhof{color: red;font-size: 35px;}
+.vermelho{color: red;}
+.fpretob{background-color: rgba(0, 0, 0, 0.95)}
+.navbar a{color: red}
+.navbar a:hover{color: red;background:#000 !important;}
+.navbar a:focus{background:#000 !important}
+.bcinza:hover{color: black}
+.dropdown-menu>li>a:hover {background-color:rgba(132, 132, 132, 0.95);}
+.nohover:hover{background:none !important;}
+.fa{color:red}
+.outsetblack{border:1px outset #222}
+
+*{
+    
+    font-family: 'open sans',sans-serif;
+    color: black;
+}
+
+body{
+    font-size: 1.575em;
+    background-color: #1C1C1C;
+  
+    
+}
+
+header{
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    padding-top: 10%;
+    
+}
+section,header{
+    background:#fff;
+}
+
+
+footer{
+   padding-top: 20px;
+   background-color: #111;
+   opacity:0.9;
+}
+
+.padding{padding: 40px}
+.texto1{border-top: solid 2px black}  
+.navbar{margin-bottom: 0;border:none !important;box-shadow:none;padding:0}
+.navbar-brand{padding: 5px}
+.fotonoticias{height: 80px;}
+.esquerda{float: left;}
+.noticias1{padding: 30px;}
+.noticias2{padding: 30px;}
+.borda{border-left: solid 2px rgb(0, 0, 0); height: 100px; padding: 10px;}
+.borda2{border: solid 3px rgb(72, 72, 72); border-radius: 2%;}
+.txtfooter{text-align: center}
+.well{background: none; border: none;}
+.txtmotor{font-size: 40px; background-color:#ffffff;}
+.imagens{text-align: center; background-color: #ffffff;}
+.motor{padding: 5px;}
+.container{padding: 0px;}
+.dica{width: 61%;height: 259px; background-image: url(img/dica.jpg);}
+.servico{font-size: 50px;font-weight: bold;text-align:center}
+.servico2{text-align: center;font-size: 40px;font-weight: bold}
+.serv{background-color: white;}
+.espa{padding-top: 20px;padding-bottom:20px;}
+.fundodica{background-color: white;text-align: center;padding: 20px;}
+.freio{padding-bottom:  10px;}
+.oleo{padding-bottom:  10px;}
+.combustivel{padding-bottom:  10px;}
+.titulo{color: red;text-align: center;font-size: 30px;font-weight: bold;padding: 10px;}
+.bt,select{width:100%;border:1px outset #eee;background:#eee;height:30px;border-radius:2px;opacity:0.8}
+.hf{padding:1px;padding-left:110px;background:#111;margin-bottom:50px;}
+select {
+    background:none;
+    border:none;
+    height:32px;
+    width:auto;
+}
+input{
+    width:100%;
+    margin:auto
+}
+table, th, td {
+    border: 1px outset #000;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table{
+    width:100%;
+}
+.painelfacebook
+{
+    position: fixed;
+    top: 10%;
+    left: -510px;
+    width: 551px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    z-index:20
+}
+
+.painelfacebook img
+{
+    width:50px;
+    float: right
+}
+
+.painelfacebook:hover
+{
+    transform: translate(513px,0);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+
+@media screen and (max-width: 480px){
+    header{
+        margin:50px 0 0 0 ;
+        min-height:50px}
+    iframe{width: 310px}
+    .painelfacebook{width:50px}
+    .nopadding{
+         padding:10px !important;
+    }
+    .autocentralizar{
+        text-align:center;
+        padding-left:0px;
+        padding-right:0px;
+    }
+}
+@media screen and (max-width: 800px){
+    header{
+        
+        min-height:50px}
+    .nopadding{
+        padding:10px !important;
+    }
+    
+}
+ .dropdown-menu ,.dropdown-menu a,.dropdown-menu a:hover{
+    background:#111 !important;
+    color:red !important;
+}

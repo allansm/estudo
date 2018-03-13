@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CultureRock Loja</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="js/script.js"></script>
+  </head>
+  <body>
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title"><div id="tituloModal"></div></h4>
+		  </div>
+		  <div class="modal-body">
+			  <div id="imgModal"></div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+    <nav class="navbar navbar-fixed-top blackbg opacity">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand scroll" href="#in" style=""></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Cadastro</a></li>
+				<li><a href="contatos.html"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contatos</a></li>
+           		<li><a href="loja.html"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Loja</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="pag afastacima afastaesquerda shadow  col-md-8 well  whitebg opacity">
+        <header class="" id="in">
+            <div id="carousel-example-generic" class="carousel slide whitebg shadow" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"> </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"> </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"> </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#carousel-example-generic" data-slide="next"><img src="img/fundopronto.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#carousel-example-generic" data-slide="next"><img src="img/fundo2pronto.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#carousel-example-generic" data-slide="next"><img src="img/fundo3pronto.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#carousel-example-generic" data-slide="next"><img src="img/fundo4pronto.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="row">
+            <div class="loja well">
+            	<h3><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Loja</h3>
+            	<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/01.jpg','AVENGED SEVENFOLD')"><img src="img/produtos/01.jpg" alt="" ></a>
+					</div>
+					<div class="">
+						AVENGED SEVENFOLD<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(79.00,'AVENGED SEVENFOLD<br/>')">R$79,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/02.jpg','GUNS`N ROSES')"><img src="img/produtos/02.jpg" alt=""></a>
+					</div>
+					<div class="">
+						GUNS`N ROSES<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(259.00,'GUNS`N ROSES<br/>')">R$259,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/03.jpg','MEGADETH')"><img src="img/produtos/03.jpg" alt=""></a>
+					</div>
+					<div class="">
+						MEGADETH<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(59.00,'MEGADETH<br/>')">R$59,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/04.jpg','ROLLING STONES')"><img src="img/produtos/04.jpg" alt=""></a>
+					</div>
+					<div class="">
+						ROLLING STONES<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(259.00,'ROLLING STONES<br/>')">R$259,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/05.jpg','SLIPKNOT')"><img src="img/produtos/05.jpg" alt=""></a>
+					</div>
+					<div class="">
+						SLIPKNOT<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(49.00,'SLIPKNOT<br/>')">R$49,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/06.jpg','FOO FIGHTERS')"><img src="img/produtos/06.jpg" alt=""></a>
+					</div>
+					<div class="">
+						FOO FIGHTERS<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(259.00,'FOO FIGHTERS<br/>')">R$259,00</button>
+				</div>
+           		<div class="clearfix produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/07.jpg','RED HOT CHILI PEPPERS')"><img src="img/produtos/07.jpg" alt=""></a>
+					</div>
+					<div class="">
+						RED HOT CHILI PEPPERS<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(259.00,'RED HOT CHILI PEPPERS<br/>')">R$259,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4" >
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/08.jpg','ARCTIC MONKEYS')"><img src="img/produtos/08.jpg" alt=""></a>
+					</div>
+					<div class="">
+						ARCTIC MONKEYS<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(49.00,'ARCTIC MONKEYS<br/>')">R$49,00</button>
+				</div>
+           		<div class="produto col-md-4 well aligncenter col-sm-4">
+					<div>
+						<a data-toggle="modal" href="#myModal" onclick="modal('img/produtos/09.jpg','JAQUETA GUNS`N ROSES')"><img src="img/produtos/09.jpg" alt=""></a>
+					</div>
+					<div class="">
+						JAQUETA GUNS`N ROSES<br>Preço
+					</div>
+					<button type="button" class="btn blackbg whitefont" onclick="getPrice(259.00,'JAQUETA GUNS`N ROSES<br/>')">R$259,00</button>
+				</div>
+            </div>
+        </section>
+    </div>
+    <div class="login col-md-2 col-md-offset-1 afastacima blackbg whitefont opacity shadow">
+        <form action="home.php" method="POST">
+            <h3 class="aligncenter">Login</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" name="usuario" placeholder="Usuario" size="50" maxlength="20">
+            </div>
+            <div class="form-group">
+                
+                <input type="text" class="form-control" name="senha" placeholder="Senha" size="50" maxlength="32">
+            </div>
+            <center><button class="btn blackbg"><span class="glyphicon glyphicon-lock"></span>
+&nbsp;Logar</button></center>
+        </form>
+    </div>
+	  <div class="well price col-md-2  col-md-offset-1 blackbg opacity whitefont shadow afastacimamenos" id="carrinho"><h3><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Carrinho</h3><label class="esquerda">R$</label><div id="price">0.00</div><div id="item" class=""></div><br/><button type="button" class="btn blackbg whitefont clearfix"><span class="glyphicon glyphicon-credit-card"></span>
+&nbsp;Comprar</button></div>
+    <div class="social col-md-2 col-md-offset-1 well blackbg opacity whitefont afastacimamenos shadow">
+        <h3 class="aligncenter">Depoimentos</h3>
+        <div class="depoimento">
+            <div class="imagem col-md-2 esquerda">
+                <img src="http://lorempixel.com/g/50/50/people/1" class="circular " alt="">
+            </div>
+            <div class="usuario col-md-4 col-md-offset-2">
+                usuario
+            </div>
+            <div class="texto well clearfix">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quibusdam atque repellat, doloribus praesentium assumenda dignissimos nemo quam incidunt! Accusantium numquam aspernatur, tempora praesentium. Id quam autem nostrum necessitatibus obcaecati.
+            </div>
+        </div>
+        <div class="depoimento">
+            <div class="imagem col-md-2 esquerda">
+                <img src="http://lorempixel.com/g/50/50/nightlife/1" class="circular " alt="">
+            </div>
+            <div class="usuario col-md-4 col-md-offset-2">
+                usuario
+            </div>
+            <div class="texto well clearfix">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quibusdam atque repellat, doloribus praesentium assumenda dignissimos nemo quam incidunt! Accusantium numquam aspernatur, tempora praesentium. Id quam autem nostrum necessitatibus obcaecati.
+            </div>
+        </div>
+        <div class="depoimento">
+            <div class="imagem col-md-2 esquerda">
+                <img src="http://lorempixel.com/g/50/50/people/9" class="circular " alt="">
+            </div>
+            <div class="usuario col-md-4 col-md-offset-2">
+                usuario
+            </div>
+            <div class="texto well clearfix">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quibusdam atque repellat, doloribus praesentium assumenda dignissimos nemo quam incidunt! Accusantium numquam aspernatur, tempora praesentium. Id quam autem nostrum necessitatibus obcaecati.
+            </div>
+        </div>
+    </div>
+    <footer class="clearfix whitefont blackbg opacity ">
+        <div class="col-md-4 ">
+            <h4 class="aligncenter ">Contatos</h4>
+            <table class="table">
+               
+                <tbody>
+                    <tr>
+                        <td>numero:</td>
+                        <td>XXXX-XXXX</td>
+                    </tr>
+                    <tr>
+                        <td>endereco:</td>
+                        <td>XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>email:</td>
+                        <td>XXXX@XXXX.XXX</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-md-4 esquerda col-sm-12 col-xs-12">
+            <h4 class="aligncenter ">Social</h4>
+            <div class="redesoc">
+				<a href="http://www.facebook.com.br">
+					<div class="face col-md-4 circular col-sm-4 col-xs-4">
+					</div>
+				</a>
+				<a href="http://www.instagram.com">
+					<div class="insta col-md-4 circular col-sm-4 col-xs-4">
+					</div>
+				</a>
+				<a href="http://www.twitter.com">
+					<div class="twit col-md-4  circular col-sm-4 col-xs-4">
+					</div>
+				</a>
+            </div> 
+        </div>
+        <div class="col-md-4 aligncenter col-sm-12 col-xs-12">
+            <h4 class="">Desenvolvedor</h4>
+            <p class="">Site desenvolvido por Allan de souza melo</p>
+            <h4 class="">Links</h4>
+            <a>Home</a><br/>
+            <a>Cadastro</a><br/>
+            <a>Contatos</a><br/>
+            <a>Loja</a>
+        </div>
+        
+        <div class="well clearfix">
+           Não me responsabilizo pelo conteúdo aqui presente, Não comercializo nenhum dos conteudos aqui presentes,  Caso algum arquivo seja de sua autoria e esteja sendo utilizado sem sua permissão, entre em contato, o conteúdo sera analizado e removido assim que possível.tudo desenvolvido aqui tem a finalidade de aprimorar os conhecimentos em web.
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>

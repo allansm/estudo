@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta content="charset=utf-8">
+		<title>Cadastro</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="login">
+				<form method="post">
+					Email:
+					<input type="text" id="emailLogin"/>
+					Senha:
+					<input type="password" id="senhaLogin"/>	
+					<input type="button" value="logar" onclick="testaLogin()"/>
+				</form>
+			</div>
+			<nav>
+				<div id="pos">
+					<a href="index.html">
+						<div class="menu">
+							<img src="img/home.png"/>home
+						</div>
+					</a>
+					<a href="cursos.html">
+						<div class="menu">
+							<img src="img/cursos.png"/>cursos
+						</div>
+					</a>
+					<a href="cadastro.html">
+						<div class="menu">
+							<img src="img/cadastro.png"/>cadastro
+						</div>
+					</a>
+					<a href="contatos.html">
+						<div class="menu">
+							<img src="img/contatos.png"/>contatos
+						</div>
+					</a>
+					<a href="downloads.html">
+						<div class="menu">
+							<img src="img/downloads.png"/>downloads
+						</div>
+					</a>
+					<a href="sobre.html">
+						<div class="menu">
+							<img src="img/sobre.png"/>sobre
+						</div>
+					</a>
+				</div>
+			</nav>
+			<br/>
+			<header>
+				<div id="logo">
+					<img src="img/logo.png"/>
+					<h2>Curso Definição</h2>
+				</div>
+			</header>
+			<br/>
+			<section>
+				<div id="titulo">
+					<h2>Cadastro do Aluno</h2>
+				</div>
+				<br/>
+				
+				<form method="post" id="formulario">
+				<h2>Dados Pessoais</h2>
+				<br/>
+					<table>
+						<tr>
+							<td>Nome:</td>
+							<td><input type="text" id="nome" maxlength="15" size="30" placeholder="digite seu nome"></td>
+						</tr>
+						<tr>
+							<td>Sobrenome:</td>
+							<td><input type="text" id="sobrenome" maxlength="50" size="30" placeholder="digite seu sobrenome"></td>
+						</tr>
+						<tr>
+							<td>Cpf:</td>
+							<td><input type="text" id="cpf" maxlength="11" size="30" placeholder="digite seu CPF apenas numeros"></td>
+						</tr>
+						<tr>
+							<td>Telefone:</td>
+							<td><input type="text" id="telefone" maxlength="11" size="30" placeholder="digite seu numero de telefone"></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" id="email" size="30" placeholder="digite seu E-mail"></td>
+						</tr>
+						
+						<tr>
+							<td>Senha:</td>
+							<td><input type="password" id="senha" maxlength="32" size="30" placeholder="digite sua senha"></td>
+						</tr>
+						<tr>
+							<td>confirmação de senha:</td>
+							<td><input type="password" id="csenha" maxlength="32" size="30" placeholder="confirme sua senha"></td>
+						</tr>
+						<tr>
+							<td>
+								Selecione o curso
+							</td>
+							<td>
+								<select id="curso">
+									<option value="1">Logica de programação</option>
+									<option value="2">HTML e CSS</option>
+									<option value="3">JavaScript</option>
+									<option value="4">PHP</option>
+									<option value="5">Java</option>
+									<option value="6">Java Web</option>
+									<option value="7">C e C++</option>
+									<option value="8">C#</option>
+									<option value="9">MySQL</option>
+									<option value="10">Python</option>
+									<option value="11">Desenvolvimento em android</option>
+									<option value="12">Desenvolvimento em Unity</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Sexo:</td>
+							<td><input type="radio" name="sexo" value="0" checked>Masculino<br><input type="radio" name="sexo" value="1">Feminino</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="button" id="enviar" value="enviar" onClick="autenticar()"><input type="reset" id="limpa" value="limpar" onClick="limpar()"></td>
+						</tr>
+					</table>
+				</form>
+				<br/>
+			</section>
+			<br/>
+			<footer>
+				Copyright &copy 2016 Allan de souza melo
+			</footer>
+		</div>
+	</body>
+</html>

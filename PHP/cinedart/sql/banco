@@ -1,0 +1,39 @@
+create database banco;
+ALTER DATABASE banco CHARSET = Latin1 COLLATE = latin1_swedish_ci;
+use banco;
+create table cartaz(
+	id bigint primary key auto_increment not null unique,
+	img varchar(255),
+	nome varchar(50) ,
+	genero varchar(50),
+	elenco varchar(255),
+	direcao varchar(50),
+	duracao int,
+	classificacao varchar(50),
+	distribuidor varchar(50)
+)engine = InnoDB;
+insert into cartaz (img,nome,genero,elenco,direcao,duracao,classificacao,distribuidor) values
+('capa1.jpg','invocação do mal 2','terror','Vera Farmiga, Patrick Wilson','James Wan','133','14 anos','warner bros'),
+('capa2.jpg','Warcraft - O Primeiro Encontro de Dois Mundos','Ação','ravis Fimmel, Toby Kebbell, Paula Patton, Ben Foster, Dominic Cooper, Robert Kazinsky, Daniel Wu, Clancy Brown e mais.','Duncan Jones','123','12 anos','Universal'), 
+('capa3.jpg','X-MEN Apocalipse','Ação','James McAvoy, Michael Fassbender, Jennifer Lawrence, Evan Peters, Oscar Isaac, Nicholas Hoult, Hugh Jackman, Alexandra Shipp, Tye Sheridan, Sophie Turner, no Kodi Smit-McPhee, Rose Byrne, Lana Condor, Ben Hardy, Olivia Munn, Lucas Till','Bryan Singer','143','12 anos','Fox films'), 
+('capa4.jpg','Independence Day: O Ressurgimento','Ação','James A. Woods, Jeff Goldblum, Liam Hemsworth, Jessie Usher, Bill Pullman, Vivica A. Fox, Judd Hirsch e mais.','Roland Emmerich','119','12 anos','Fox films'), 
+('capa5.jpg','Angry birds o filme','infantil','Jason Sudeikis, Maya Rudolph, Peter Dinklage','Clay Kaytis, Fergal Reilly','90','Livre','Columbia Tristar'), 
+('capa6.jpg','As Tartarugas Ninja: Fora das Sombras','Aventura','Megan Fox, Will Arnett, William Fichtner ',' Jonathan Liebesman','112','10 anos','Paramount');
+
+create table cadastro(
+	id bigint primary key auto_increment not null unique,
+	nome varchar(30) not null,
+	sobrenome varchar(50) not null,
+	email varchar(255) unique not null,
+	telefone varchar(10) not null,
+	sexo enum('M','F') not null,
+	login varchar(20) unique not null,
+	senha varchar(32) not null
+)engine = InnoDB;
+
+create table conteudo(
+	id bigint primary key auto_increment not null unique,
+	img varchar(255),
+	titulo varchar(15),
+	txt varchar(255)
+);

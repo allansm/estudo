@@ -1,0 +1,22 @@
+package aula2;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		int a=2,b=4,c=1;
+		int maior = a;
+		int menor = a;
+		if(a < b){
+			maior = b;
+		}else{
+			menor = b;
+		}
+		if(b < c){
+			maior = c;
+		}else{
+			menor = c;
+		}
+		System.out.println("o maior numero foi o "+maior+" e o menor  foi "+menor);
+	}
+
+}

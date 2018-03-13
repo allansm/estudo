@@ -1,0 +1,15 @@
+package aula2;
+
+public class Situacao {
+
+	public static void main(String[] args) {
+		double n1 = 4;
+		double n2 = 5;
+		if((n1+n2/2) >=6){
+			System.out.println("aluno aprovado");
+		}else{
+			System.out.println("aluno reprovado");
+		}
+	}
+
+}

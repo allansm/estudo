@@ -1,0 +1,187 @@
+﻿<!-- index.html -->
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" href="css/estiloResponsivo.css">
+		<meta name="viewport" content="width=600, user-scalable=yes">
+		<meta charset="utf-8">
+		<script src="js/valida.js"></script>
+	</head>
+	<body onload="setInterval(function(){contador();},3000);">
+		<div id="base">
+			<div id="topo">
+				<div id="imgTopo"><img src="img/topo.jpg" width="100%" height="100%"></div>
+				<div id="topoMenor"><img src="img/topoMenor.jpg"></div>
+			</div>
+			<div id="menu">
+				<button class="btn" onclick="javascript:Exibe1();">HOME</button>
+				<button class="btn" onclick="javascript:Exibe2();">SERVIÇOS</button>
+				<button class="btn" onclick="javascript:Exibe3();">HISTORIA</button>
+				<button class="btn" onclick="javascript:Exibe4();">CONTATOS</button>
+			</div>
+			<div id="corpo">
+				<div id="conteudo1">
+					<div id="cont">
+						<div id="imagens">
+							<img src="img/bg1.jpg" id="bg"/>
+							<br/>
+						
+							<div id="caixa">
+								<div class="bola" onclick="javascript:mudaFoto(1);" id="b1"></div>
+								<div class="bola" onclick="javascript:mudaFoto(2);" id="b2"></div>
+								<div class="bola" onclick="javascript:mudaFoto(3);" id="b3"></div>
+								<div class="bola" onclick="javascript:mudaFoto(4);" id="b4"></div>
+							</div>
+							<br/>
+						</div>
+						<div id="texto">
+							<div id="txt1">
+								<div class="bgmenor">
+									<img src="img/bg1Menor.jpg"/>
+								</div>
+								<h3>Equipe Netwireless</h3>
+								<p>Nossa loja esta equipada para atender as mais diversas necessidades em equipamentos e suprimentos de informática. Para prestação de serviços contamos com equipe especializada em diversas áreas. Cada membro da equipe exerce sua função específica porém todos são capazes de realizar o atendimento inicial fora de sua especialização. Estamos nos atualizando constantemente para oferecer as melhores soluções para qualquer tipo de cliente. Trabalhamos com consertos de computadores desktops e notebooks. Oferecemos suporte para as mais difersas plataformas. Para a área comercial fazemos a total informatização, desde equipamentos até a implatação de software Fiscal de Gerenciamento. Montamos redes de médio e grande porte e também colocamos sua empresa ou você mesmo na web. O que você procura em TI temos o melhor para oferecer.</p>
+							</div>
+							<div id="txt2">
+								<div class="bgmenor">
+									<img src="img/bg2Menor.jpg"/>
+								</div>
+								<h3>Objetivos e Metas</h3>
+								<p>Nosso principal objetivo é estabelecer relação de confiança com nossos clientes, de forma que estes possam contar sempre com uma fonte confiável, rápida e diferenciada. Oferecer produtos de qualidade, inovação e sempre trazer novas soluções para todo tipo de cliente. A Tecnologia da Informação cresce a cada dia e nosso objetivo relacionado ao nossos serviços é trazer essas tecnologias para todos nossos clientes. Nossas metas são cumpridas a cada dia que são as realizações dos nossos objetivos dentro de prazos estimados. Levamos nossos objetivos e metas como desafios que sempre são conquistados com muito sucesso.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="conteudo2">
+					<div id="container">
+						<font size="6px">
+							<form method="POST">
+								<div id="formulario" class="area">
+									<center><h2 id="titulo">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Cadastro</h2></center>
+									NOME: 
+									<input type="text" id="nome" size="42" class="campo" placeholder="  Digite seu nome completo"/><br/><br/>
+									IDADE: 
+									<input type="text" id="idade" size="1" class="campo"/>
+									&nbsp &nbsp &nbsp  SEXO: 
+									M<input id="M" type="radio" class="b" name="sexo" checked value="M"/>
+									F<input id="F" type="radio" class="b" name="sexo" value="F"/>
+									<br/><br/>
+									TELEFONE:  
+									<input type="text" id="tel" class="campo"size="35" placeholder="  Digite seu telefone"/>
+									<br/><br/>
+									E-MAIL: 
+									<input type="text" id="email" class="campo" size="42" placeholder="  Digite seu email"/>
+									<br/><br/>
+									<div id="contaUsuario">
+									<br/>
+										Usuarios cadastrados:0
+									</div>
+								</div>
+								<div id="bts" class="area">
+									<br/><br/>
+									<input type="button" value="Adicionar" id="add" class="campo" onclick="adicionar()" style=""/><br/>
+									<input type="button" value="Excluir" id="excluir" class="campo" onclick="Exibe5();" style=""/><br/>
+									<input type="reset" value="Limpar" id="limpar" class="campo" style="" onclick="limpaCampo('formulario');"/><br/>
+									<input type="button" value="Consultar" id="consultar" class="campo" onclick="Exibe6();" style=""/><br/><br/>
+									<center><div id="alerta"></div></center>
+								</div>
+							</form>
+						</font>
+					</div>
+				</div>
+				<div id="conteudo3">
+					<div id="txt3">
+						<h2>Historia</h2>
+						A Netwireless Informática está equipada e preparada para atender os mais diversos seguimentos. <br/>Atendemos usuários domésticos, corporativos, automação comercial e redes de pequeno e grande porte. O foco principal de todos nosso serviços é reduzir custos aos clientes e aumentar a produtividade tendo a tecnologia a seu favor.
+						<br/>
+						<h3>O que podemos fazer para sua empresa?</h3>
+						<i><b>Análise</b></i> – Visitamos sua empresa, analisamos a estrutura de TI existente e criamos um projeto para instalações adequadas e seguras contendo todos os equipamentos necessários incluindo Servidores.<br/>
+						<i><b>Gerenciamento</b></i> – Esta segunda etapa do projeto consiste em conhecer a rotina do negócio, que tipo de dados são manipulados e com essas informações apresentamos as melhores soluções para cópias de segurança, o próprio manuseio e até mesmo o acesso externo. Formas de gerenciamento da Informação Automatizada e Manual.<br/>
+						<i><b>Help-Desk e Suporte no Local</b></i> – Com o projeto realizado a necessidade de atendimento é reduzida drasticamente, porém se necessário prestamos todo suporte necessário seja pelo primeiro atendimento ao telefone, acesso remoto ou visita técnica no local.<br/>
+						<i><b>Divulgamos seu Negócio</b></i> – Parte final de nosso projeto consiste em divulgar seu negócio na web, oferecer maior comodidade para seus clientes e mantê-los informados sobre novidades e ofertas. Com poderosas ferramentas de Markting na Web fazemos com que o mesmo seja conhecido em qualquer lugar do Brasil. Construímos seu site, hospedamos e criamos seus e-mails personalizados.<br/>
+						Venha para Netwireless Informática. Não deixe que o mal funcionamento do seu Sistema de Informações seja um transtorno em sua vida.<br/>
+						<h3>Sou um usuário Doméstico. O que a Netwireless pode me oferecer? Qual a vantagem de eu ser um novo cliente?</h3>
+						Simples e a resposta se torna outra pergunta. O que o usuário gosta de fazer? “Simples também”. Ele gosta de passar o tempo, estudar, pesquisar, ouvir músicas e assistir vídeos e muitas outras coisas, então nosso laboratório deixa seu computador com o sistema otimizado para tudo isso, você não tem que se preocupar em instalar plugins, codecs, atualizações, anti-vírus, nada é necessário, já fazemos tudo isso para você, basta ligar seu computador e usufruí-lo.
+						A vantagem de se tornar nosso cliente é pelo serviço que oferecemos em primeiro lugar, garantia de nossos produtos e a certeza que sempre estaremos a disposição para poder ajudá-lo.
+					</div>
+				</div>
+				<div id="conteudo4">
+					<div id="alerta2">
+					
+					</div>
+					<div id="fale">
+						<font size="6px">
+							<center><h3>Fale Conosco</h3></center>
+							<form>
+								Nome:<br/><input type="text" id="nomeB" size="40" placeholder=" Digite seu nome"><br/><br/>
+								Email:<br/><input type="text" id="emailB" size="40" placeholder=" Digite seu email"><br/><br/>
+								Mensagem:<br/><textarea id="areaDeTexto" rows="7" cols="62" placeholder=" Deixe aqui sua mensagem"></textarea>
+								<center><input type="button" value="Enviar" style="width:80px;" id="btnenviar" onclick="faleConosco();"></center>
+							</form>
+						</font>
+					</div>
+				</div>
+				<div id="conteudo5">
+					<center><h2>Digite o nome do usuario que deseja excluir</h2></center>
+					<form>
+						<table>
+							<tr>
+								<td>
+									Nome:
+								</td>
+								<td>
+									<input type="text" id="nome2">
+								</td>
+								<td>
+									<input type="button" id="exc" value="Excluir" onclick="deletar()">
+								</td>
+								<td>
+									<input type="button" value="voltar" onclick="Exibe2();">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="conteudo6">
+					<center><h2>Digite o id que deseja consultar ou nome</h2></center>
+					<form>
+						<table>
+							<tr>
+								<td>
+									Id:
+								</td>
+								<td>
+									<input type="text" id="id">
+								</td>
+								<td>
+									<input type="button" id="consultar" value="Consultar" onclick="buscar()">
+								</td>
+								<td>
+									<input type="button" value="voltar" onclick="Exibe2()">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									nome:
+								</td>
+								<td>
+									<input type="text" id="nome3">
+								</td>
+								<td>
+									<input type="button" id="consultar2" value="Consultar" onclick="buscarNome()">
+								</td>
+							</tr>
+						</table>
+					</form>
+					<center><font size="7px"><div id="dados"></div></font></center>
+				</div>
+			</div>
+			<div id="rodape" align="center">
+				<h6>Web Site Criado por Allan de souza melo</h6>
+			</div>
+		</div>
+	</body>
+</html>

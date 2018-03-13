@@ -1,0 +1,12 @@
+package aula2;
+
+public class Ex2 {
+	public static void main(String[] args){
+		int n = 2;
+		if(n % 2 == 0){
+			System.out.println("numero par");
+		}else{
+			System.out.println("numero impar");
+		}
+	}
+}

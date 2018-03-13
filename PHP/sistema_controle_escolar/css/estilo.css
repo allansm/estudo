@@ -1,0 +1,67 @@
+@charset "utf-8";
+body{
+	background:#333;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.navbar ul li a:hover{
+	background:#333;
+}
+.navbar a{
+	color:#eee
+}
+.navbar .nav > li.dropdown.open.active > a:hover, 
+.navbar .nav > li.dropdown.open > a
+{
+   color: #fff;
+   background-color: #333;
+   border-color: #fff;
+}
+.dropdown-menu{
+	background:#333;
+}
+.dropdown-menu li a,.dropdown-menu li a:hover{
+	color:#eee;
+}
+.icon-bar{
+	background:#eee
+}
+.highmargintop{margin-top:200px}
+.highmarginbottom{margin-bottom: 200px}
+.midmargintop{margin-top:90px}
+.midmarginbottom{margin-bottom: 200px}
+.display{display:inline-block}
+.mauto{margin:auto}
+.blackbg,.bt{background:#222}
+.darkbg{background:#000}
+.opacity{opacity:0.7}
+.lowopacity{opacity:0.9}
+.whitefont,.bt{color:#eee}
+.blackfont,.textfield,.passwordfield{color:#222}
+.box{margin:10px;padding:10px}
+.lrbox{padding:10px;padding-left:40px;padding-right:40px}
+.lowbox,.textfield,.passwordfield{border-radius:1px}
+.halfbox,.bt{margin:5px;padding:5px}
+.lowbox,.textfield,.passwordfield{margin:2px;padding:2px}
+.nopadding {padding:0px}
+.nomargin,.bt{margin:0px}
+.nopaddingleft{padding-left: 0px}
+.nopaddingright{padding-right: 0px}
+.fill,.textfield,.passwordfield{width:100%}
+.nomarginleft,.textfield,.passwordfield{margin-left: 0px}
+.nomarginright,.textfield,.passwordfield{margin-right: 0px}
+.insetborder,.textfield,.passwordfield{border:2px inset #222}
+.outsetborder,.bt{border:2px outset #222}
+.dashedborder{border:1px dashed #eee}
+.tbdashedborder{border-top:1px dashed #eee; border-bottom:1px dashed #eee}
+.bdashedborder{border-bottom:1px dashed #eee}
+.noradius{border-radius:0px}
+.lowradius,.textfield,.passwordfield{border-radius:2px}
+.midradius{border-radius:5px}
+.highradius{border-radius:10px}
+.round{border-radius:100%}
+.noborder,.textfield,.passwordfield{border:none}
+.outsetshadow,.bt{-webkit-box-shadow: 2px 2px 5px 0px rgba(51,3,NaN,1);-moz-box-shadow: 2px 2px 5px 0px rgba(51,3,NaN,1);box-shadow: 2px 2px 5px 0px rgba(51,3,NaN,1);}
+.insetshadow,.textfield,.passwordfield{-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);}
