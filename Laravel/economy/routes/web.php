@@ -1,0 +1,15 @@
+<?php
+route::get("/","HomeController@index")->middleware("auth:web")->name("home");
+route::get("/logout","LoginController@logout")->middleware("auth:web")->name("logout");
+route::get("/login","LoginController@login")->name("login");
+route::get("/cadastro","LoginController@cadastro")->name("cadastro");
+route::post("/login","LoginController@autenticate")->name("autenticar");
+route::post("/cadastro","LoginController@create")->name("cadastrar");
+route::get("/deposito","ContaController@deposito")->middleware("auth:web")->name("deposito");
+route::post("/deposito","ContaController@depositar")->middleware("auth:web")->name("depositar");
+route::get("/Compra","CompraController@index")->middleware("auth:web")->name("compra");
+route::post("/Compra","CompraController@create")->middleware("auth:web")->name("compra.cad");
+route::get("/historico","CompraController@historico")->middleware("auth:web")->name("historico");
+route::post("/historico","CompraController@deletar")->middleware("auth:web")->name("deletar");
+route::post("/deposito/delete","ContaController@deletar")->middleware("auth:web")->name("deletar.deposito");
+route::post("/usuario/update","LoginController@update")->middleware("auth:web")->name("usuario.update");
