@@ -1,0 +1,15 @@
+composer create-project --prefer-dist laravel/laravel blog
+
+composer dump-autoload
+
+https://github.com/jeroennoten/Laravel-AdminLTE
+
+composer require jeroennoten/laravel-adminlte
+
+php artisan vendor:publish --provider="JeroenNoten\LaravelAdminLte\ServiceProvider" --tag=assets
+
+php artisan make:adminlte
+
+https://github.com/caouecs/Laravel-lang
+
+keepvid
