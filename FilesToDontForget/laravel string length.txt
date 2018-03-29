@@ -1,0 +1,5 @@
+App/Providers/AppServiceProvider.php
+
+public function boot(){
+	Schema::defaultStringLength(191);
+}
